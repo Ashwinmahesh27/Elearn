@@ -1,0 +1,7 @@
+{
+  "name": "SMU eLearn - Decision Architecture",
+  "description": "Singapore Management University eLearn portal for MGMT6108 Decision Architecture course featuring interactive learning modules, progress tracking, and student resources.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

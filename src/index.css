@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Sidebar active arrow notch */
+  .active-nav-notch {
+    position: relative;
+    background-color: #edf3fa;
+  }
+  .active-nav-notch::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #ffffff;
+    pointer-events: none;
+  }
+}
+
+@media print {
+  header, aside, .no-print, .support-widget {
+    display: none !important;
+  }
+  main {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+}
+
